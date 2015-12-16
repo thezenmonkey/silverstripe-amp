@@ -1,0 +1,7 @@
+Controller:
+  extensions:
+    - 'AmpController'
+
+SiteTree:
+  extensions:
+    - 'AmpSiteTreeExtension'
