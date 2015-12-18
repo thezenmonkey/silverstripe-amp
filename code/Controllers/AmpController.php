@@ -12,29 +12,28 @@
 class AmpController extends Extension
 {
 
-    private static $allowed_actions = array ('amp');
+    private static $allowed_actions = array('amp');
 
     private static $url_handlers = array(
         'amp.html' => 'amp'
     );
 
-    public function amp() {
+    public function amp()
+    {
         $class = Controller::curr()->ClassName;
         $page = $this->owner->renderWith(array("$class-Amp", "Amp"));
 
         return $this->AmplfyHTML($page);
-
     }
 
-    public function AmplfyHTML($content) {
-        if(!$content) {
+    public function AmplfyHTML($content)
+    {
+        if (!$content) {
             return false;
         }
         
         $content = str_replace("<img", "<amp-img", $content);
 
         return $content;
-
     }
-
 }
