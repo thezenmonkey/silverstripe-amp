@@ -2,7 +2,6 @@
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
-  "headline": "$Title",
-  //"breadcrumb": "Books > Literature & Fiction > Classics",
+  "headline": "$Title"
 }
 </script>
