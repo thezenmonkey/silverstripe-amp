@@ -20,10 +20,9 @@ class AmpController extends Extension
 
     public function amp() {
         $class = Controller::curr()->ClassName;
-        $page = $this->owner->renderWith(array("$class_amp", "Amp"));
+        $page = $this->owner->renderWith(array("$class"."_amp", "Amp"));
 
         return $this->AmplfyHTML($page);
-
     }
 
     public function AmplfyHTML($content) {
@@ -34,7 +33,6 @@ class AmpController extends Extension
         $content = str_replace("<img", "<amp-img", $content);
 
         return $content;
-
     }
 
 }
