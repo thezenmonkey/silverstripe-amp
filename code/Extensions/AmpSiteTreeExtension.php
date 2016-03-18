@@ -9,7 +9,8 @@
 class AmpSiteTreeExtension extends SiteTreeExtension
 {
 
-    public function MetaTags(&$tags) {
+    public function MetaTags(&$tags)
+    {
         $ampLink = $this->owner->AbsoluteLink()."amp.html";
         $tags .= "<link rel='amphtml' href='$ampLink' /> \n";
     }
