@@ -22,7 +22,7 @@ A custom controller then renders your content using an AMP HTML version of the P
 
 ### Themes and Custom Page Types
 
-The base Page type is `Amp.ss`, which can be overidden in your theme like any SilvserStripe Template. Custom Page Types can be rendered using `ClassName-Amp.ss` in your theme.
+The base Page type is `Amp.ss`, which can be overidden in your theme like any SilvserStripe Template. Custom Page Types can be rendered using `ClassName_amp.ss` in your theme.
 
 ## To Do
 This is an initial commit as proof of concept as such

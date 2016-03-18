@@ -21,7 +21,7 @@ class AmpController extends Extension
     public function amp()
     {
         $class = Controller::curr()->ClassName;
-        $page = $this->owner->renderWith(array("$class_amp", "Amp"));
+        $page = $this->owner->renderWith(array("$class"."_amp", "Amp"));
 
         return $this->AmplfyHTML($page);
     }
